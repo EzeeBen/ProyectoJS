@@ -4,82 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
-    <title>Pre-entrega 3</title>
+    <title>Proyecto final | Bebidas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="contenedor">
-        <section class="pantalla">
-            0
-        </section>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <a href="#" class="logo">Mi tienda de bebidas(prototipo)</a>
+            <!-- Icono -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <!-- Chango -->
+            <div class="cart">
+                <h2 class="cart-title">Tu changuito</h2>
+                <!-- Contenido -->
+                <div class="cart-content">
 
-        <section class="calc-btns">
-            <div class="calc-btn-fila">
-                <button class="calc-btn doble">
-                    C
-                </button>
-                <button class="calc-btn">
-                    &larr;
-                </button>
-                <button class="calc-btn">
-                    &divide;
-                </button>
-            </div>
-            <div class="calc-btn-fila">
-                <button class="calc-btn">
-                    7
-                </button>
-                <button class="calc-btn">
-                    8
-                </button>
-                <button class="calc-btn">
-                    9
-                </button>
-                <button class="calc-btn">
-                    &times;
-                </button>
-            </div>
-            <div class="calc-btn-fila">
-                <button class="calc-btn">
-                    4
-                </button>
-                <button class="calc-btn">
-                    5
-                </button>
-                <button class="calc-btn">
-                    6
-                </button>
-                <button class="calc-btn">
-                    &minus;
-                </button>
-            </div>
-            <div class="calc-btn-fila">
-                <button class="calc-btn">
-                    1
-                </button>
-                <button class="calc-btn">
-                    2
-                </button>
-                <button class="calc-btn">
-                    3
-                </button>
-                <button class="calc-btn">
-                    &plus;
-                </button>
-            </div>
-            <div class="calc-btn-fila">
-                <button class="calc-btn triple">
-                    0
-                </button>
-                <button class="calc-btn">
-                    &equals;
-                </button>
-            </div>
+                </div>
+                <!-- Total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- Boton compra -->
+                <button type="button" class="btn-buy">Comprar ahora</button>
+                <!-- Cierre de chango -->
+                <i class='bx bx-x' id="close-cart"></i>
 
-        </section>
-    </div>
-
-
-    <script src="./JS/proyecto.js"></script>
+            </div>
+        </div>
+    </header>
+    <!-- Tienda -->
+    <section class="shop container">
+        <h2 class="section-title">La sustancia</h2>
+        <!-- Contenido de la tienda -->
+        <div class="shop-content">
+            <!-- Productos -->
+            <div class="product-box">
+                <img src="./imagenes/Amber Ale.jpg" alt="Amber Ale" class="product-img">
+                <h2 class="product-title">Cerveza Amber Roja</h2>
+                <span class="price">$350</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="./imagenes/Caipiroska.jpg" alt="Caipiroska" class="product-img">
+                <h2 class="product-title">Caipiroska</h2>
+                <span class="price">$550</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="./imagenes/Cerveza.jpg" alt="La Rubia de Siempre" class="product-img">
+                <h2 class="product-title">La Rubia de Siempre</h2>
+                <span class="price">$350</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="./imagenes/Fernet.jpg" alt="Fernecito Generoso" class="product-img">
+                <h2 class="product-title">Fernecito Generoso</h2>
+                <span class="price">$500</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="./imagenes/Gin.jpg" alt="Gin Tonic" class="product-img">
+                <h2 class="product-title">Gin Tonic</h2>
+                <span class="price">$550</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="./imagenes/Gordo Motoneta.jpg" alt="El Gordo Motoneta" class="product-img">
+                <h2 class="product-title">El Gordo Motoneta(botella)</h2>
+                <span class="price">$750</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="./imagenes/Stout.jpg" alt="Cerveza Morocha" class="product-img">
+                <h2 class="product-title">Cerveza Morocha</h2>
+                <span class="price">$350</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="./imagenes/Tequila.jpg" alt="Tequilaso" class="product-img">
+                <h2 class="product-title">Tequilaso</h2>
+                <span class="price">$550</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <script src="js/proyecto.js"></script>
+    
 </body>
 </html>
